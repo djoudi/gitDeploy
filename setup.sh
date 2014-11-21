@@ -3,9 +3,10 @@
 echo "This will set up your deployment-environment.
 Please make sure that you specify the correct path to your webroot."
 
-read -p "Setup: Proceed?:" proceed answer
+start
 
-function proceed {
+function start {
+  read -p "Setup: Proceed?:" answer
   case "$answer" in
     Yes|yes|Y|y|"")
     git init
