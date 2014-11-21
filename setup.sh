@@ -3,7 +3,7 @@
 echo "This will set up your deployment-environment.
 Please make sure that you specify the correct path to your webroot."
 
-start
+start()
 
 function start {
   read -p "Setup: Proceed?:" answer
