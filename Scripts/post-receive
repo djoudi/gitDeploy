@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ..
+env -i git checkout -f
+
+if [ -f composer.json ]; then
+    composer install
+fi
