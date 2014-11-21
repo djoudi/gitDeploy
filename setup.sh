@@ -3,9 +3,6 @@
 echo "This will set up your deployment-environment.
 Please make sure that you specify the correct path to your webroot."
 
-start()
-
-function start() {
   read -p "Setup: Proceed?:" answer
   case "$answer" in
     Yes|yes|Y|y|"")
@@ -17,13 +14,8 @@ function start() {
     exit 1
     ;;
     No|no|N|n) echo "Cancel."
-    quit()
+    exit 1
     ;;
     *) echo "Unkown Parameter"
     ;;
   esac
-}
-
-function quit() {
-  exit
-}
