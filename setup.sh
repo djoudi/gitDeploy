@@ -17,13 +17,13 @@ function start {
     exit 1
     ;;
     No|no|N|n) echo "Cancel."
-    exit 1
+    quit()
     ;;
     *) echo "Unkown Parameter"
     ;;
   esac
 }
 
-function quit {
+function quit() {
   exit
 }
