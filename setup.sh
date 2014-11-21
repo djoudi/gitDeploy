@@ -5,7 +5,7 @@ Please make sure that you specify the correct path to your webroot."
 
 start()
 
-function start {
+function start() {
   read -p "Setup: Proceed?:" answer
   case "$answer" in
     Yes|yes|Y|y|"")
